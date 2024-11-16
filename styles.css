@@ -91,6 +91,7 @@ body{
 }
 @media (min-width: 900px){
     .container{
+        margin-top: 0;
         height: 100vh;
         flex-direction: row;
     }
