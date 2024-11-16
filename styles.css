@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    background-color: #f1f1f1;
+    font-size: 15px;
+}
+
+.container{
+    margin-top: 100px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.sub-container{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem 3rem 1rem 3rem;
+    align-items: flex-start;
+    max-width: 270px;
+}
+.sub-container > *{
+    margin: 1rem 0;
+}
+.section-title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+}
+
+.section-paragraph{
+    color: #ffffff92;
+}
+
+.btn{
+    width: 8rem;
+    height: 3rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.btn:hover{
+    color: white;
+    border: 3px solid white;
+}
+.btn-bright-orange{
+    color: var(--bright-orange);
+}
+.btn-dark-cyan{
+    color: var(--dark-cyan);
+}
+.btn-very-dark-cyan{
+    color: var(--very-dark-cyan);
+}
+.btn-bright-orange:hover{
+    background-color: var(--bright-orange);
+}
+.btn-dark-cyan:hover{
+    background-color: var(--dark-cyan);
+}
+.btn-very-dark-cyan:hover{
+    background-color: var(--very-dark-cyan);
+}
+.bright-orange{
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: var(--bright-orange);
+}
+.dark-cyan{
+    background-color: var(--dark-cyan);
+}
+.very-dark-cyan{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+@media (min-width: 900px){
+    .container{
+        height: 100vh;
+        flex-direction: row;
+    }
+    .section-title{
+        font-size: 3rem;
+    }
+    .btn{
+        margin-top: 3rem !important;
+        font-size: 1rem;
+    }
+    .bright-orange{
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .very-dark-cyan{
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    
+}
