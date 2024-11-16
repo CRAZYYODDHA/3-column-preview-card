@@ -69,14 +69,20 @@ body{
 .btn-very-dark-cyan{
     color: var(--very-dark-cyan);
 }
-.btn-bright-orange:hover{
+.btn-bright-orange:hover, .btn-bright-orange:focus{
     background-color: var(--bright-orange);
+    border: 3px solid white;
+    color: white;
 }
-.btn-dark-cyan:hover{
+.btn-dark-cyan:hover, .btn-dark-cyan:focus{
     background-color: var(--dark-cyan);
+    border: 3px solid white;
+    color: white;
 }
-.btn-very-dark-cyan:hover{
+.btn-very-dark-cyan:hover, .btn-very-dark-cyan:focus{
     background-color: var(--very-dark-cyan);
+    border: 3px solid white;
+    color: white;
 }
 .bright-orange{
     border-radius: 0.5rem 0.5rem 0 0;
